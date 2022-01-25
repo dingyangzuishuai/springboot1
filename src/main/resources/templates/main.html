@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<script th:src="@{/bootstrap3/js/jquery.min.js}"></script>-->
+<!--<script th:src="@{/bootstrap3/js/bootstrap.min.js}"></script>-->
+<!--<link rel="stylesheet" th:href="@{/bootstrap3/css/bootstrap.min.css}">-->
+<body>
+<p>its index</p>
+<p>你好，</p>
+<p th:text="${session.user.getName()}"></p>
+</body>
+</html>
