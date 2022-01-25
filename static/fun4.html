@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        @keyframes move {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            25% {
+                transform: translate(1920px, 1080px);
+            }
+            50% {
+                transform: translate(0px, 1080px);
+            }
+            75% {
+                transform: translate(1920px, 0px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+         */
+
+        .dad {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transition: all 10s;
+            /* animation: move 30s linear infinite alternate forwards; */
+        }
+
+        .dad:hover {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+        .dad div {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .son1,
+        .son2 {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .son3,
+        .son4 {
+            width: 300px;
+            height: 150px;
+            background-color: yellow;
+        }
+
+        .son5,
+        .son6 {
+            width: 200px;
+            height: 150px;
+            background-color: green;
+        }
+
+        .son1 {
+            transform-origin: top;
+            transform: rotateX(-90deg);
+        }
+
+        .son2 {
+            transform-origin: bottom;
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .son4 {
+            transform: translateZ(-200px);
+        }
+
+        .son5 {
+            transform-origin: left;
+            transform: rotateY(90deg);
+        }
+
+        .son6 {
+            transform-origin: right;
+            transform: rotateY(-90deg)translateZ(-100px);
+        }
+
+        div img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="dad">
+    <div class="son1"><img src="img/index1.png" alt=""></div>
+    <div class="son2"><img src="img/index2.png" alt=""></div>
+    <div class="son3"><img src="img/index3.png" alt=""></div>
+    <div class="son4"><img src="img/index4.png" alt=""></div>
+    <div class="son5"><img src="img/index5.png" alt=""></div>
+    <div class="son6"><img src="img/index6.png" alt=""></div>
+</div>
+</body>
+
+</html>
